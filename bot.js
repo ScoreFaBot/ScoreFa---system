@@ -83,7 +83,6 @@ client.on("message", async message => {
     err
   ) {
     if (err) throw err;
-  });
 
 });
 
