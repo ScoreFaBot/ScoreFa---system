@@ -15,13 +15,11 @@ client.user.setActivity(`scorefa.net`,"")
 client.user.setStatus("dnd")
 });
 
-Client.on('message', message => {
-  if (message.content === "%test") {
-message.channel.send(""+   **
-
-السلام عليكم ورحمة الله وبركاته
-**);
-    }
+client.on('message', message => {
+  if (message.content === "هلا") {
+message.reply('اهلاً);
+              }
+              
 });
 
 
