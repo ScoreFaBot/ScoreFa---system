@@ -14,13 +14,6 @@ client.on('ready', () => {
 client.user.setGame(``,"")
 client.user.setStatus("dnd")
 });
-client.on('message', msg => {
-   if (msg.content === 'السلام عليكم'
-       msg.reply('وعليكم السلام,');
-}
-       
-});
-
 
 
 client.login(process.env.BOT_TOKEN);
