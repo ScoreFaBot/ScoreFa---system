@@ -10,7 +10,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Brodcast Bot ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setActivity(scorefa.net,'');
+client.user.setGame(scorefa.net,'');
 client.user.setStatus("dnd")
 });
 
