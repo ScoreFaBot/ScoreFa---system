@@ -12,7 +12,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(scorefa.net,'scorefa.net');
 client.user.setStatus("dnd")
-});
+   
 const antispam = JSON.parse(fs.readFileSync("./antispam.json", "utf8"));
 
 client.on("message", async message => {
