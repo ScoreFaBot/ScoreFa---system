@@ -1,21 +1,24 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const Client = new Discord.Client();
 
 
 
-client.on('ready',  () => {
+
+Client.on('ready',  () => {
   console.log('=================');
   console.log('AUTHOR : S7_');
-client.user.setStatus("dnd");
+Client.user.setStatus("dnd");
 });
 
 // Playing
-client.on('ready', () => {
-client.user.setActivity(`scorefa.net`,'');
-});
+Client.on('ready', () => {
+Client.user.setActivity(`scorefa.net`,'');
 });
 
-
+Client.on('message', msg => {   if (msg.content === 'السلام عليكم') {     msg.reply('وعليكم السلام');   } });
 
 //BOT TOKEN
-client.login(process.env.BOT_TOKEN);
+Client.login('Njk2OTcxNDA3MjA4MzQ5NzI2.XpI98Q.U3CY14FaFV5ia9bYowZzRknZRbQ');
+
+
+
