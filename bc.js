@@ -12,7 +12,7 @@ client.user.setStatus("dnd");
 
 // Playing
 client.on('ready', () => {
-client.user.setActivity(`scorefa.net`,'');
+client.user.setGame(`scorefa.net`,'');
 });
 
 client.on('message', msg => {   if (msg.content === 'السلام عليكم') {     msg.reply('وعليكم السلام');   } });
