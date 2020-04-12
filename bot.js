@@ -1,22 +1,21 @@
 const Discord = require("discord.js");
-const Client = new Discord.Client();
+const client = new Discord.Client();
+const prefix = "$";
 
 
 
-
-Client.on('ready',  () => {
-  console.log('=================');
-  console.log('AUTHOR : S7_');
-Client.user.setStatus("dnd");
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Brodcast Bot`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Brodcast Bot ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(test``,"test")
+client.user.setStatus("dnd")
 });
 
-// Playing
-Client.on('ready', () => {
-Client.user.setActivity(`scorefa.net`,'');
-});
 
-Client.on('message', msg => {   if (msg.content === 'السلام عليكم') {     msg.reply('وعليكم السلام');   } });
 
-//BOT TOKEN
 
 client.login(process.env.BOT_TOKEN);
