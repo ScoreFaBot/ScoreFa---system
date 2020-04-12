@@ -18,7 +18,7 @@ Client.user.setActivity(`scorefa.net`,'');
 Client.on('message', msg => {   if (msg.content === 'السلام عليكم') {     msg.reply('وعليكم السلام');   } });
 
 //BOT TOKEN
-Client.login('Njk2OTcxNDA3MjA4MzQ5NzI2.XpI98Q.U3CY14FaFV5ia9bYowZzRknZRbQ');
+Client.login(process.env.BOT_TOKEN);
 
 
 
