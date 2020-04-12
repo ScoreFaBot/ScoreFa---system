@@ -3,19 +3,19 @@ const client = new Discord.Client();
 
 
 
-Client.on('ready',  () => {
+client.on('ready',  () => {
   console.log('=================');
   console.log('AUTHOR : S7_');
-Client.user.setStatus("dnd");
+client.user.setStatus("dnd");
 });
 
 // Playing
-Client.on('ready', () => {
-Client.user.setActivity(`scorefa.net`,'');
+client.on('ready', () => {
+client.user.setActivity(`scorefa.net`,'');
 });
 });
 
 
 
 //BOT TOKEN
-Client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
