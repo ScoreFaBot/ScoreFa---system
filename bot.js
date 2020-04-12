@@ -18,4 +18,4 @@ Client.user.setActivity(`scorefa.net`,'');
 
 
 //BOT TOKEN
-client.login(process.env.BOT_TOKEN);
+Client.login(process.env.BOT_TOKEN);
